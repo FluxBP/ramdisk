@@ -1,0 +1,232 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "filename",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "del",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "filename",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "delnode",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "filename",
+                    "type": "name"
+                },
+                {
+                    "name": "nodeid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delnodec",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "filename",
+                    "type": "name"
+                },
+                {
+                    "name": "startid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "count",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delnodes",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "filename",
+                    "type": "name"
+                },
+                {
+                    "name": "startid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "endid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "file",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "node",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "reset",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "filename",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "setimmutable",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "filename",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "setnode",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "filename",
+                    "type": "name"
+                },
+                {
+                    "name": "nodeid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "nodedata",
+                    "type": "bytes"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "del",
+            "type": "del",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delnode",
+            "type": "delnode",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delnodec",
+            "type": "delnodec",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delnodes",
+            "type": "delnodes",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "reset",
+            "type": "reset",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setimmutable",
+            "type": "setimmutable",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setnode",
+            "type": "setnode",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "files",
+            "type": "file",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "nodes",
+            "type": "node",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
